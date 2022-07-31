@@ -1,0 +1,220 @@
+/*---Logo----*/
+.logo-barra{
+    display: flex;
+    justify-content: space-between;
+}
+
+.log{
+    display: flex;
+
+}
+
+rect#azul-arriba,polygon#azul-abajo{
+    animation: mov-1 ease-in 3s;
+    animation-iteration-count: 1;
+}
+    
+rect#celes-arriba,polygon#celes-abajo {
+    animation: mov-2 ease-in 5s;
+    animation-iteration-count: 2; 
+}
+
+@keyframes mov-1{
+ 0% {
+    transform: translate(0,-12px);
+    opacity: 0;}
+
+    10% {
+    transform: translate(10px,-15px);
+    opacity: 0;}
+
+    20% {
+    transform: translate(10px,10px);
+    opacity: 1;}
+
+    50% {
+    transform: translate(0,0);
+    opacity: 1;}
+
+    100% {
+    transform: translate(0,0);
+    opacity: 1;}
+}   
+
+@keyframes mov-2{
+ 0% {   
+        transform: translate(0,-12px);
+        opacity: 0;}
+
+        10% {
+        transform: translate(10px,-15px);
+        opacity: 0;}
+
+        20% {
+        transform: translate(10px,10px);
+        opacity: 1;}
+
+        50% {
+        transform: translate(0,0);
+        opacity: 1;}
+
+        100% {
+        transform:translate(0,0);
+        opacity: 1;}
+}  
+
+/*----Sector items----*/
+#items{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin: 30px;
+    
+}
+
+li:active{
+    transform: translate(4px, 2px);
+}
+
+.historia-juguemos{
+    color:#333333;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 4px 5px rgb(130, 128, 128);
+    background-color: #EEEEEE;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 50px;
+    border-radius: 10px; 
+    padding: 10px 10px ; 
+}
+
+/*----Sector Titulo e imagen----*/
+
+.titulo-imagen{ 
+   overflow: hidden;
+   position: relative;
+   border-radius: 20px;
+   box-shadow: 5px 8px 12px black;
+   background-image: url(./Info-Trabajo-Final/assets/imagenes/codigo.jpeg);
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: 100% 0%;
+   position: relative;
+   width: 100%;
+   height: 600px;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    color:#F0F5E4;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2D2D2D;
+    text-shadow: 5px 4px #2D2D2D;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+/*----Recuadros----*/
+
+h2{
+    font-size: 60px;
+    text-align: center;
+    color:#F0F5E4;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 5px 4px #2D2D2D;
+    
+}
+
+section{
+   display: flex;
+   flex-grow: end;
+   margin-left: 480px;
+   margin-top: 100px;
+   width: 900px;
+   
+  
+
+}
+
+.galeria{
+  
+    margin: 50px;
+    background-color: #F0F5E4;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgb(128, 173, 240), 0 6px 20px 0 black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+   
+}
+
+.texto{
+    text-align: center;
+    text-shadow: 2px 2px 2px pink;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*----botones del cuadro----*/
+
+.cuadro{
+    background-color: #427E80;
+    color: #EEEEEE;
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    border-radius: 10px; 
+    padding: 20px 20px;
+    text-align: center;   
+}
+
+.cuadro:active{
+    box-shadow: 4px 5px rgb(130, 128, 128);
+    transform: translate(4px, 2px);
+}
+
+
+/*---- ----*/
+
+footer{
+    background-color: #2D2D2D;
+    width: auto;
+    height: 100px;
+    margin-top: 300px;
+}
+
+.logo-inf{
+    margin-left: 30px;
+}
+
+.pro-his{
+    font-size: 25px;
+    color: #EEEEEE;
+    margin-top: -90px;
+    margin-left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sitio{
+    font-size: 20px;
+    color: #EEEEEE;
+    margin-top: -60px;
+    margin-left: 1370px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #427E80;
+}
